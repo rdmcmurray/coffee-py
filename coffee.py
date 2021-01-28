@@ -19,6 +19,7 @@ def solve_volume(dose):
 def solve_dose(target_volume):
 	p = _tds * 0.01
 	v = target_volume + (target_volume * p) 
+	# this is used in the original, but i cannot understand the arbitrary scaling factor
 	# v = target_volume * 0.9765 * (1 - p)
 	r = _ratio - _intensity_modifier - _retention
 	d = v / r
